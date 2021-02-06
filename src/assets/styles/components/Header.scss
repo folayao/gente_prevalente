@@ -21,20 +21,34 @@
         background-color: $GrayNavBarGMD;
         border: none;
         color: $blanco;
-        
     }
     .form-control:focus {
         background-color: $GrayNavBarGMD;
         border: none;
         color: $blanco;
-        outline:none;
-        outline-width: 0 ;
+        outline: none;
+        outline-width: 0;
         box-shadow: none;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
-        
     }
-    .form-control::placeholder{
+    .form-control::placeholder {
         color: $blanco;
+    }
+
+    .nav-link {
+        font-family: $roboto;
+        color: $blanco;
+        font-weight: 400;
+    }
+
+    .dropdown-menu {
+        background-color: $GrayNavBarGMD;
+        .dropdown-item {
+            color: $blanco;
+        }
+        .dropdown-item:hover {
+            color: $GrayNavBarGMD;
+        }
     }
 }
