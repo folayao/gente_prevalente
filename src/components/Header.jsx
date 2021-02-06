@@ -19,7 +19,7 @@ export default class Header extends Component {
                 <a className="navbar__container--title" href="#" style={{ paddingTop: 0, paddingBottom: 0 }}><img src={logo} className="" alt="Logo Gente Prevalente" /> Gente Prevalente</a>
                 <button className="navbar-toggler d-lg-none" style={{ border: 0 }} type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation"><img src={menu} alt="" /></button>
-                <div className="collapse navbar-collapse ml-sm-5 ml-md-5 " id="collapsibleNavId">
+                <div className="collapse navbar-collapse ml-md-5" id="collapsibleNavId">
                     <img src={lupa} alt="" className="pr-1" />
                     <form className="form-inline  ml-0 mt-3 mt-sm-0 mt-md-0 my-lg-0">
                         <input className="form-control mr-sm-2" style={{ paddingLeft: 0 }}
