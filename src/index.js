@@ -6,8 +6,9 @@ import App from './routes/App'
 
 /* Bootstrap */
 import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import popper from 'popper.js';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min';
 
 
 ReactDOM.render(

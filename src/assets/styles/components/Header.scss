@@ -1,0 +1,40 @@
+@import "../vars.scss";
+
+.navbar__container {
+    background-color: $GrayNavBarGMD;
+    .navbar__container--title {
+        font-family: $roboto;
+        font-weight: 700;
+        font-size: 16px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    .navbar__container--title:hover {
+        text-decoration: none;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .form-control {
+        background-color: $GrayNavBarGMD;
+        border: none;
+        color: $blanco;
+        
+    }
+    .form-control:focus {
+        background-color: $GrayNavBarGMD;
+        border: none;
+        color: $blanco;
+        outline:none;
+        outline-width: 0 ;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        
+    }
+    .form-control::placeholder{
+        color: $blanco;
+    }
+}

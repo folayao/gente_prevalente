@@ -55,8 +55,6 @@ module.exports = merge(common, {
         extensions: [ '.js', '.jsx']
     },
     devServer: {
-        inline: false,
-        historyApiFallback: true,
         hot: true,
         port: port,
         headers: {

@@ -3,12 +3,11 @@ const webpack = require('webpack');
 const MINICssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const dotenv = require('dotenv');
-const { env, port, host_name_local } = require('./config');
-
+const {port, host} = require('./config');
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['./src/index.js', `webpack-hot-middleware/client?path=${host}${port}/__webpack_hmr&reload=true'`],
     context: path.resolve(__dirname),
     output: {
         path: path.resolve(__dirname, 'dist'),
