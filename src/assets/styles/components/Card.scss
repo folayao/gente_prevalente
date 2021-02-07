@@ -1,54 +1,125 @@
 @import "../vars.scss";
 
-.contenedor__card {
-    margin-top: -3.5%;
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 
-    .icono {
-        z-index: 2;
-        top: 15%;
-        left: 22px;
-        width: 5em;
-        height: 5.7em;
-        padding: 25px;
-        padding-left: 19px;
-        padding-right: 19px;
-        background-color: $BlueGMD;
-        position: relative;
-        border-radius: 8px;
-    }
-
-    .card {
-        border-radius: 15px;
-        height: 330px;
-       
-        z-index: 1;
-        .card-body {
-            z-index: 1;
-            border-radius: 5px;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) {
+    .contenedor__card {
+        margin-top: -3.5%;
+        .icono {
+            z-index: 2;
+            top: 15%;
+            left: 22px;
+            width: 5em;
+            height: 5.7em;
+            padding: 25px;
+            padding-left: 19px;
+            padding-right: 19px;
+            background-color: $BlueGMD;
             position: relative;
-            box-shadow: 0px 4px 4px 0px #000000 25%;
-            .card-title {
-                color: black;
-                font-family: $roboto;
-                font-size: 36px;
-                font-weight: 400;
-            }
+            border-radius: 8px;
         }
-        .card-footer{
-            padding: 0px;
-            height: 76px;
-            .card-text{
-                font-family: $roboto;
-                font-weight: 400;
-                font-size: 14px;
-                position: relative;
-                left: 50px;
-                bottom: 22px;
-                width: 30%;
-                .card__footer--img{
-                    padding-right: 10px;
+
+        .card {
+            border-radius: 15px;
+            z-index: 1;
+            box-shadow: 0px 4px 4px 0px #0000003d;
+            .card-body {
+                height: 104px;
+                z-index: 1;
+                border-radius: 5px;
+                .card-title {
+                    width: 75%;
+                    position: relative;
+                    top: 5px;
+                    left: 94px;
+                    bottom: 5px;
+                    color: black;
+                    font-family: $roboto;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+            }
+            .card-footer {
+                padding: 0px;
+                height: 76px;
+                .card-text {
+                    font-family: $roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    position: relative;
+                    left: 50px;
+                    bottom: 30px;
+                    width: 30%;
+                    .card__footer--img {
+                        padding-right: 10px;
+                    }
                 }
             }
         }
     }
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .contenedor__card {
+        margin-top: -3.5%;
+
+        .icono {
+            z-index: 2;
+            top: 15%;
+            left: 22px;
+            width: 5em;
+            height: 5.7em;
+            padding: 25px;
+            padding-left: 19px;
+            padding-right: 19px;
+            background-color: $BlueGMD;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .card {
+            border-radius: 15px;
+            height: 330px;
+            z-index: 1;
+            box-shadow: 0px 4px 4px 0px #0000003d;
+            .card-body {
+                z-index: 1;
+                border-radius: 5px;
+                position: relative;
+                .card-title {
+                    position: relative;
+                    top: 70px;
+                    color: black;
+                    font-family: $roboto;
+                    font-size: 36px;
+                    font-weight: 400;
+                    left: 27px;
+                }
+            }
+            .card-footer {
+                padding: 0px;
+                height: 76px;
+                .card-text {
+                    font-family: $roboto;
+                    font-weight: 400;
+                    font-size: 14px;
+                    position: relative;
+                    left: 50px;
+                    width: 30%;
+                    .card__footer--img {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

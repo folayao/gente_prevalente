@@ -11,19 +11,13 @@ class Card extends Component {
         return (
 
             <>
-
-                <div className=" col-6 contenedor__card">
+                <div className=" col-md-6 col-xs-12 contenedor__card">
                     <img src={icon} alt="" className="icono" />
                     <div className="card">
                         <div className="card-body">
-                            <br />
-                            <br />
-                            <br />
-                            <br />
                             <h4 className="card-title">{titulo}</h4>
-
                         </div>
-                        <div className="card-footer text-muted ">
+                        <div className="card-footer text-muted mb-0 mb-sm-3 mb-md-0">
                             <img src={reloj} alt="" className="card__footer--img" style={{paddingLeft: 17, paddingTop:20}}/>
                             <div className="card-text ">
                                 {info}
