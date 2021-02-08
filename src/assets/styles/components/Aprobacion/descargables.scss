@@ -1,0 +1,33 @@
+@import "../../vars.scss";
+
+@media (min-width: 409px) and (max-width: 768px) {
+    .contenedor__ul-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 30px;
+        .contenedor__ul-item--p {
+            grid-column: 1/3;
+        }
+        .contenedor__ul-item--a {
+            .contenedor__ul-item--img {
+                margin-left: 55px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor__ul-item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        .contenedor__ul-item--p {
+            grid-column: 1/3;
+        }
+        .contenedor__ul-item--a {
+            .contenedor__ul-item--img {
+                margin-left: 55px;
+            }
+        }
+    }
+}

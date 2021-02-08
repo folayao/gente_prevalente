@@ -1,65 +1,92 @@
 @import "../vars.scss";
 
-@media (min-width: 320px) and (max-width: 600px) {
-    .container {
-        .card {
-            box-shadow: 0px 4px 4px 0px #0000003d;
-            border-radius: 15px;
-            .card-body {
-                margin-bottom: 30px;
-                padding: 0px;
-            }
-            .logo {
-                padding: 43px;
-                background-color: #f3f3f3;
-            }
-            .btn {
-                border: none;
-                box-shadow: 0px 2px 2px 0px #00000068;
-                border-radius: 16px;
-                width: 110%;
-                color: black;
+// Medium devices (smartphones, 409px and 768px)
+@media (min-width: 409px) and (max-width: 768px) {
+    .contenedor__breadcrumb {
+        .breadcrumb {
+            background: none;
+            .breadcrumb-item {
                 font-family: $roboto;
-                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                a {
+                    text-decoration: none;
+                    color: #26b4ff;
+                }
+                a:hover {
+                    color: #1f9adc;
+                }
             }
-
-            .btn:hover {
-                box-shadow: 0px 2px 2px 0px #000000;
-                background-color: #f3f3f3;
+            .active {
                 color: #000;
             }
-            .form-control {
-                border: none;
-                border-radius: 0px;
-                border-bottom: 1px solid #a7a7a7;
-                padding-top: 0px;
+        }
+        .contenedor__labelfooter {
+            margin-top: 5px;
+            .label__footer {
+                font-family: $roboto;
+                font-weight: 400;
+                font-size: 14px;
+                .label__footer-item {
+                    color: #525252;
+                }
             }
-            .form-control:focus {
-                border: none;
-                border-bottom: 1px solid grey;
-                box-shadow: none;
-                -moz-box-shadow: none;
-                -webkit-box-shadow: none;
-            }
-            .contenedor {
-                width: 100%;
-                .contenedor__forms {
-                    margin-bottom: 48px;
-                    padding: 0px;
-                    .contenedor__forms--item {
-                        margin-left: 2;
-                    }
-                    .contenedor__forms--label {
+        }
+    }
+    .card {
+        box-shadow: 0px 4px 4px 0px #0000003d;
+        border-radius: 15px;
+        .card-body {
+            margin-bottom: 30px;
+            padding: 0px;
+
+            .contenedor__modal {
+                .contenedor__modal-header {
+                    border-bottom: none;
+                    .contenedor__modal-header--title {
+                        margin-left: 20px;
+                        font-size: 18px;
                         font-family: $roboto;
-                        font-weight: 400;
-                        font-size: 12px;
-                        color: #727171;
-                        padding: 0px;
-                        margin: 0px;
+                        font-weight: 700;
+                    }
+                }
+                .contenedor__modal-body {
+                    padding-top: 0px;
+                    width: 90%;
+                    margin-top: 60px;
+                    .contenedor__ul {
+                        border-bottom: none;
+                        list-style: none;
+                        font-family: $roboto;
+                        font-weight: 700;
+                        font-size: 16px;
                     }
                 }
             }
         }
+        .logo {
+            padding: 43px;
+            background-color: #f3f3f3;
+        }
+        .form-control {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid #a7a7a7;
+            padding-top: 0px;
+        }
+        .form-control:focus {
+            border: none;
+            border-bottom: 1px solid grey;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        .contenedor {
+            width: 90%;
+            margin-left: 15px;
+        }
+    }
+    .contenedor__botonesResponsive {
         .btn {
             border: none;
             box-shadow: 0px 2px 2px 0px #00000068;
@@ -71,6 +98,11 @@
             font-weight: 700;
         }
         .btn:hover {
+            box-shadow: 0px 2px 2px 0px #000000;
+            background-color: #f3f3f3;
+            color: #000;
+        }
+        .btn:active {
             box-shadow: 0px 2px 2px 0px #000000;
             background-color: #f3f3f3;
             color: #000;
@@ -80,85 +112,118 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .container {
-        .card {
-            box-shadow: 0px 4px 4px 0px #0000003d;
-            border-radius: 15px;
-            .card-body {
-                margin-bottom: 90px;
-                padding: 0px;
-                .contenedor__head{
-                    margin-top: 20px;
-                    .contenedor__head--buttons{
-
-                    }
+    .contenedor__breadcrumb {
+        .breadcrumb {
+            margin-left: 53px;
+            background: none;
+            .breadcrumb-item {
+                font-family: $roboto;
+                font-size: 24px;
+                a {
+                    text-decoration: none;
+                    color: #26b4ff;
+                }
+                a:hover {
+                    color: #1f9adc;
                 }
             }
-            .logo {
-                padding: 43px;
-                background-color: #f3f3f3;
-            }
-            .btn {
-                border: none;
-                box-shadow: 0px 2px 2px 0px #00000068;
-                border-radius: 16px;
-                width: 110%;
-                color: black;
-                font-family: $roboto;
-                font-weight: 700;
-            }
-
-            .btn:hover {
-                box-shadow: 0px 2px 2px 0px #000000;
-                background-color: #f3f3f3;
+            .active {
                 color: #000;
             }
-            .form-control {
-                border: none;
-                border-radius: 0px;
-                border-bottom: 1px solid #a7a7a7;
-                padding-top: 0px;
-            }
-            .form-control:focus {
-                border: none;
-                border-bottom: 1px solid grey;
-                box-shadow: none;
-                -moz-box-shadow: none;
-                -webkit-box-shadow: none;
-            }
-            .contenedor {
-                // width: 100%;
-                .contenedor__forms {
-                    margin-bottom: 50px;
-                    padding: 15px;
-                    .contenedor__forms--item {
-                        margin-left: 2;
-                    }
-                    .contenedor__forms--label {
-                        font-family: $roboto;
-                        font-weight: 400;
-                        font-size: 12px;
-                        color: #727171;
-                        padding: 0px;
-                        margin: 0px;
-                    }
+        }
+    }
+
+    .card {
+        box-shadow: 0px 4px 4px 0px #0000003d;
+        border-radius: 15px;
+        .card-body {
+            margin-bottom: 150px;
+            padding: 0px;
+            .contenedor__head {
+                margin-top: 20px;
+                .contenedor__head--buttons {
                 }
             }
+        }
+        .logo {
+            padding: 43px;
+            background-color: #f3f3f3;
         }
         .btn {
             border: none;
             box-shadow: 0px 2px 2px 0px #00000068;
             border-radius: 16px;
             width: 110%;
-            background-color: #ffff;
             color: black;
             font-family: $roboto;
             font-weight: 700;
         }
+
         .btn:hover {
             box-shadow: 0px 2px 2px 0px #000000;
             background-color: #f3f3f3;
             color: #000;
+        }
+        .btn:active {
+            box-shadow: 0px 2px 2px 0px #000000;
+            background-color: #f3f3f3;
+            color: #000;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid #a7a7a7;
+            padding-top: 0px;
+        }
+        .form-control:focus {
+            border: none;
+            border-bottom: 1px solid grey;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        .contenedor {
+            width: 85%;
+            margin-left: 57px;
+            .contenedor__forms {
+                margin-bottom: 50px;
+                padding: 15px;
+                .contenedor__modal {
+                    .contenedor__modal-header {
+                        border-bottom: none;
+                        .contenedor__modal-header--title {
+                            margin-left: 40px;
+                            font-size: 36px;
+                            font-family: $roboto;
+                            font-weight: 700;
+                        }
+                    }
+                    .contenedor__modal-body {
+                        padding-top: 0px;
+                        width: 90%;
+                        .contenedor__ul {
+                            border-bottom: none;
+                            list-style: none;
+                            font-family: $roboto;
+                            font-weight: 700;
+                            font-size: 24px;
+         
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contenedor__labelfooter {
+        margin-top: 5px;
+        margin-left: 40px;
+        .label__footer {
+            padding-top: 10px;
+            font-family: $roboto;
+            font-weight: 400;
+            font-size: 14px;
+            color: #525252;
         }
     }
 }

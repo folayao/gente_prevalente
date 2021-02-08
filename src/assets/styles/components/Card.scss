@@ -24,20 +24,27 @@
         .card {
             border-radius: 15px;
             z-index: 1;
-            box-shadow: 0px 4px 4px 0px #0000003d;
             .card-body {
                 height: 104px;
                 z-index: 1;
                 border-radius: 5px;
                 .card-title {
+                    margin-top: 50px;
                     width: 75%;
                     position: relative;
                     top: 0px;
-                    left: 94px;
+                    left: 74px;
                     color: black;
                     font-family: $roboto;
                     font-size: 24px;
                     font-weight: 400;
+                    .direccion {
+                        text-decoration: none;
+                        color: #000;
+                    }
+                    .direccion:hover {
+                        text-decoration: none;
+                    }
                 }
             }
             .card-footer {
@@ -58,6 +65,7 @@
                 }
             }
         }
+        
     }
 }
 
@@ -83,7 +91,11 @@
         .card {
             border-radius: 15px;
             height: 330px;
-            z-index: 1;
+            z-index: 1;            
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
             box-shadow: 0px 4px 4px 0px #0000003d;
             .card-body {
                 z-index: 1;
@@ -91,7 +103,7 @@
                 position: relative;
                 .card-title {
                     position: relative;
-                    top: 70px;
+                    top: 60px;
                     color: black;
                     font-family: $roboto;
                     font-size: 36px;
@@ -116,6 +128,13 @@
                     }
                 }
             }
+        }
+        .card:hover {
+            -webkit-transform: scale(1.01);
+            -moz-transform: scale(1.01);
+            -o-transform: scale(1.01);
+            transform: scale(1.01);
+            box-shadow: 0px 4px 4px 0px #00000082;
         }
     }
 }
