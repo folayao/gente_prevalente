@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 
 /* Contenedores */
 import Home from '../containers/Home'
+import AprobacionEmpresas from '../containers/AprobacionEmpresas'
 
 
 
@@ -12,7 +13,8 @@ const App = () => {
         <BrowserRouter>
             <Switch>
                 <Layout>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/" component={AprobacionEmpresas} />
                 </Layout>
             </Switch>
         </BrowserRouter>

@@ -32,9 +32,8 @@
                 .card-title {
                     width: 75%;
                     position: relative;
-                    top: 5px;
+                    top: 0px;
                     left: 94px;
-                    bottom: 5px;
                     color: black;
                     font-family: $roboto;
                     font-size: 24px;
@@ -42,6 +41,7 @@
                 }
             }
             .card-footer {
+                border-top: 1px solid gray;
                 padding: 0px;
                 height: 76px;
                 .card-text {
@@ -50,8 +50,8 @@
                     font-size: 14px;
                     position: relative;
                     left: 50px;
-                    bottom: 30px;
-                    width: 30%;
+                    bottom: 25px;
+                    width: 35%;
                     .card__footer--img {
                         padding-right: 10px;
                     }
@@ -102,6 +102,8 @@
             .card-footer {
                 padding: 0px;
                 height: 76px;
+                border-top: 1px solid gray;
+
                 .card-text {
                     font-family: $roboto;
                     font-weight: 400;
