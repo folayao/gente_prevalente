@@ -27,7 +27,7 @@ export default class AprobacionEmpresas extends Component {
                     <div className=" contenedor__labelfooter d-block d-sm-none mb-4">
                         <div className="row mx-auto label__footer">
                             <img src={izq} alt="" />
-                            <label className="label__footer-item mx-3 pt-2"> Empresa 1 de 2 pendiente por aprobación </label>
+                            <label className="label__footer-item mx-3  pt-2"> Empresa 1 de 2 pendiente por aprobación </label>
                             <img src={derecha} alt="" />
                         </div>
                     </div>
@@ -38,7 +38,7 @@ export default class AprobacionEmpresas extends Component {
                         <div class="card-body">
                             <div className="container-fluid contenedor__head">
                                 <div className="row">
-                                    <img src={logo} alt="" className="logo offset-lg-4 offset-2 mt-lg-0 mt-4" />
+                                    <img src={logo} alt="" className="logo offset-lg-4 offset-1 mt-lg-0 mt-4" />
 
                                     <div className="col-3 offset-1 mt-3 d-none d-sm-block contenedor__head--buttons">
                                         <button className="btn btn-outline-secondary mb-4"> <img src={palomita} alt="" /> Aprobar Empresa</button>
