@@ -63,7 +63,6 @@ module.exports = merge(common, {
         new MINICssExtractPlugin({
             filename: 'assets/app.css'
         }),
-        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             template: "./public/index.html",
             filename: "index.html",

@@ -18,15 +18,6 @@
             height: 70px;
         }
 
-        .notificacion {
-            position: relative;
-            bottom: 5px;
-            border-radius: 15px;
-            font-family: $roboto;
-            color: $blanco;
-            font-size: 9px;
-            background-color: red;
-        }
         .form-control {
             background-color: $GrayNavBarGMD;
             border: none;
@@ -82,22 +73,6 @@
             height: 70px;
         }
 
-        .notificacion {
-            position: relative;
-            bottom: 5px;
-            left: 240px;
-            -moz-border-radius: 50%;
-            -webkit-border-radius: 50%;
-            border-radius: 100%;;
-            font-family: $roboto;
-            color: $blanco;
-            font-size: 8px;
-            padding: 1px;
-            padding-left: 4px;
-            padding-right:4px ;
-            background-color: red;
-        }
-
         .form-control {
             background-color: $GrayNavBarGMD;
             border: none;
@@ -117,6 +92,37 @@
             color: $blanco;
         }
 
+        .cont_not {
+            display: grid;
+            grid-template-columns: repeat(6, 35px);
+            grid-template-rows: auto;
+            .notificacion {
+                width: 25%;
+                height: 25%;
+                position: relative;
+                left: 10px;
+                grid-row: 1;
+                grid-column: 5  ;
+                border-radius: 100%;
+                font-family: $roboto;
+                color: $blanco;
+                font-size: 8px;
+                padding-left: 2px;
+                background-color: red;
+            }
+            .cont-link {
+                grid-row: 1;
+                grid-column: 2/5;
+                font-family: $roboto;
+                color: $blanco;
+                font-weight: 400;
+            }
+            .cont-img{
+                grid-row:1;
+                grid-column: 1;
+
+            }
+        }
         .nav-link {
             font-family: $roboto;
             color: $blanco;

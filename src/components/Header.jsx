@@ -25,13 +25,13 @@ export default class Header extends Component {
                         <input className="form-control mr-sm-2" style={{ paddingLeft: 0 }}
                             type="text" placeholder="Search..." id="form-control-input" />
                     </form>
-                    <p className="notificacion d-none d-sm-block">2</p>
                     <ul className="navbar-nav flex-md-row w-100 mt-2 ">
-                        <li className="nav-item active ml-md-auto  ">
-                    
-                            <Link className="nav-link" to="/"> <img style={{ paddingBottom: 5 }} src={engranajes} alt="" /> Administración <span className="sr-only">(current)</span></Link>
+                        <li className="nav-item active ml-md-auto cont_not ">
+                        <img style={{ paddingBottom: 5 }} src={engranajes} alt="" className="nav-link cont-img"  /> 
+                            <Link className="nav-link cont-link" to="/"> Administración</Link>
+                            <p className="notificacion d-none d-sm-block">2</p>
                         </li>
-                        
+
                         <li className="nav-item dropdown ml-md-auto  active">
                             <a className="nav-link  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img style={{ paddingBottom: 5 }} src={empleo} alt="" /> Empleo <img src={dropdown} alt="" />

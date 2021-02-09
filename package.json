@@ -50,6 +50,7 @@
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
+    "vercel": "^21.2.3",
     "webpack-manifest-plugin": "^3.0.0"
   }
 }
